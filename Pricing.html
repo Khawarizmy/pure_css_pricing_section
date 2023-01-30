@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" author="Ekhawarizmy.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khawarizmy Price List</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
+
+body {
+  background-color: #eee;
+  font-family: 'Changa', sans-serif;
+  padding: 3rem 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 71rem;
+  margin: 0 auto;
+}
+
+.priceList {
+  color: black;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
+  grid-gap: 2em;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 2em;
+  border-radius: 1.5em;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 100ms, transform 100ms;
+  transition-timing-function: ease-in-out cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  cursor: grab;
+}
+
+.item:hover {
+  box-shadow: 0 40px 40px rgba(0, 0, 0, 0.16);
+  transform: translate(0, -20px);
+}
+
+.popular {
+  position: relative;
+}
+
+.popular::before {
+  content: "الأكثر مبيعاً";
+  position: absolute;
+  top: 0.5em;
+  right: 37%;
+  text-align: center;
+  font-size: 0.9em;
+  padding: 5 5em;
+  background-color: #ffd900;
+  width: 6em;
+  height: 2em;
+  border-radius: 0.5em;
+  color: #282824;
+}
+
+img {
+  margin: auto;
+  width: 50%;
+}
+
+.packageTitle {
+  margin: 0;
+  font-size: 1.7em;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.subtitle {
+  color: #a5c9ff;
+}
+
+.price {
+  color: darkblue;
+  font-size: 2.5em; 
+}
+
+.services {
+  margin: 1.87em 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.singleService {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.singleService::before {
+  content: " ";
+  width: 0.5em;
+  height: 0.5em;
+  -webkit-margin-end: 1em;
+          margin-inline-end: 1em;
+  border-radius: 50%;
+  background-color: darkblue;
+}
+
+.excluded_service::before {
+  content: " ";
+  width: 0.5em;
+  height: 0.5em;
+background-color: rgb(205, 0, 0);
+}
+
+.selectButton {
+  background: rgb(0, 67, 154);
+  color: #fff;
+  margin-top: auto;
+  padding: 1em 0.3em;
+  text-decoration: none;
+  width: 100%;
+  border-radius: 1.87em;
+  text-align: center;
+}
+
+.selectButton:hover {
+  background-color: #4cae4f;
+}
+
+
+.rocketPackage {
+    background-color: rgb(240, 92, 66);
+}
+
+.specailPackage {
+    background-color: rgb(0, 164, 201);
+}
+
+    </style>
+</head>
+<body>
+<div class="container">
+  <ul class="priceList">
+    <li class="item">
+      <img src="https://cdn.pixabay.com/photo/2020/08/24/08/31/rocket-5513144__480.png"/>
+      <h3 class="packageTitle">باقة مميزة</h3>
+      <p class="description">
+        <span class="subtitle">مناسبة للخوادم العامة</span>
+        <span class="price">400 EGP</span>
+      </p>
+      <ul class="services">
+          <li class="singleService">خدمة تصميم الموقع</li>
+          <li class="singleService">دعم فني متكامل</li>    
+        <li class="singleService excluded_service">صلاحيات غير محدودة</li>
+        <li class="singleService excluded_service">مواقع غير محدودة</li>
+      </ul>
+      <a href="https://www.youtube.com/channel/UCZEI1JjppSCrwYoc4ohJqhQ" class="selectButton specailPackage">إختيار الباقة</a>
+    </li>
+    <li class="item popular">
+      <img src="https://cdn.pixabay.com/photo/2021/12/04/08/46/rocket-6844760__480.png"/>
+      <h3 class="packageTitle">باقة سونيك</h3>
+      <p class="description">
+        <span class="subtitle">الأكثر مبيعاً</span>
+        <span class="price">30 UAE</span>
+      </p>
+      <ul class="services">
+        <li class="singleService">خدمة تصميم الموقع</li>
+        <li class="singleService">دعم فني متكامل</li>              
+        <li class="singleService">مواقع غير محدودة</li>
+        <li class="singleService excluded_service">صلاحيات غير محدودة</li>
+      </ul>
+      <a href="https://www.youtube.com/channel/UCZEI1JjppSCrwYoc4ohJqhQ" class="selectButton">إختيار الباقة</a>
+    </li>
+    <li class="item">
+      <img src="https://cdn.pixabay.com/photo/2020/11/25/17/16/rocket-launch-5776462__480.png"/>
+      <h3 class="packageTitle">الباقة الصاروخية</h3>
+      <p class="description">
+        <span class="subtitle">مناسبة لخوادم الفيديو</span>
+        <span class="price">100 SAR</span>
+      </p>
+      <ul class="services">
+        <li class="singleService">خدمة تصميم الموقع</li>
+        <li class="singleService">دعم فني متكامل</li>
+        <li class="singleService">صلاحيات غير محدودة</li>
+        <li class="singleService">مواقع غير محدودة</li>
+      </ul>
+      <a href="https://www.youtube.com/channel/UCZEI1JjppSCrwYoc4ohJqhQ" class="selectButton rocketPackage">إختيار الباقة</a>
+    </li>
+  </ul>
+</div>
+</body>
+</html>
